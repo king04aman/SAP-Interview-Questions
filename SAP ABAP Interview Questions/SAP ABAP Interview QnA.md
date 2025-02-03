@@ -62,6 +62,62 @@
 49. Why do some tables require an append structure approach for SAP standard tables?
 50. What does “activation” mean in the context of Data Dictionary objects?
 
+51. How do you define a classical ABAP report to output a simple list with headings and line items?
+52. What is the significance of “List Processing” in classical reporting, and how do you handle secondary lists?
+53. Explain how the `AT USER-COMMAND` event is used for interactive reports.
+54. In older function module-based ALV (REUSE_ALV_LIST_DISPLAY), what are the key parameters you must pass for field catalogs?
+55. Compare the classical ALV function modules approach with the OOP-based ALV Grid approach (`CL_GUI_ALV_GRID`).
+56. How do you create an interactive ALV where double-clicking a row triggers a detailed view in a second screen?
+57. What is the difference between ALV List and ALV Grid? Why might you choose one over the other?
+58. In a scenario: you need to highlight rows in red if a quantity is negative. Which ALV technique do you use?
+59. How might you integrate selection screens with ALV output in a single ABAP report program?
+60. If you need a custom toolbar button in ALV, how do you add it and handle its user command?
+
+61. What is SAP Script, and in which scenarios was it historically used?
+62. Differentiate between SAP Script, Smart Forms, and Adobe Forms as form printing technologies.
+63. If a user wants a PDF-based official invoice form, which SAP printing approach might you recommend and why?
+64. How do you pass data from an ABAP program to a Smart Form for dynamic text or fields?
+65. Why might you prefer a “driver program + form” design pattern for printing application documents?
+66. In Smart Forms, how do you handle conditions or logic for printing certain sections (e.g., only if item quantity is above 0)?
+67. Can you briefly explain the concept of windows vs. pages in Smart Forms?
+68. If you want to migrate an SAP Script layout to Smart Forms, is there any tool or direct migration path?
+69. Describe a scenario in which you’d implement custom logic inside the form using form routines vs. separate function modules.
+70. How do you debug layout logic or text routines inside a Smart Form?
+
+71. In ABAP, what is a “Customer Exit” and how does it differ from a “User Exit”?
+72. What is a BAdI (Business Add-In), and how do you typically implement it in code?
+73. How do implicit and explicit enhancements differ from classical user exits or BAdIs?
+74. If you want to add a new check in standard SAP code without modifying it, which enhancement framework options exist?
+75. Provide an example of using transaction SMOD/CMOD for user exits in SAP standard modules.
+76. What is the Enhancement Spot concept in newer ABAP releases, and how do you define or implement them?
+77. When might you use a “Multiple Use BAdI” instead of a “Single Use BAdI”?
+78. How do you handle BAdI filter values, and why might that be relevant for scenario-specific logic?
+79. Describe how you might search for available user exits or BAdIs in SAP standard transactions.
+80. In your own words, how do enhancements help keep standard code “upgrade-safe”?
+
+81. What is OOP in ABAP, and how does it differ from older “procedural” ABAP?
+82. Explain the significance of classes, methods, and interfaces in ABAP Objects.
+83. Give a small code snippet showing how to define a global class in SE24 with a public method.
+84. Why might you define an interface if you can simply define an abstract class?
+85. In an OO ALV scenario: how does the `CL_SALV_TABLE` approach simplify list creation compared to older function modules?
+86. How do you create attributes or methods that are only visible within the class (private) vs. visible outside (public)?
+87. Explain constructor methods in ABAP Objects. How do they differ from class constructors vs. instance constructors?
+88. If you want to override a method from a superclass, which syntax do you use?
+89. What is a “final” class or method in ABAP, and why might you declare it as final?
+90. How can you handle event handling in ABAP Objects (publish-subscribe pattern within classes)?
+
+91. Define RFC (Remote Function Call) in ABAP. How do you mark a function module as remote-enabled?
+92. Provide a scenario where you’d use tRFC or qRFC instead of sRFC. Why?
+93. If you want to call an ABAP function from an external system (e.g., Java or .NET), how do you expose it?
+94. How do you handle connection errors or timeouts when calling an RFC from outside SAP?
+95. What is a BAPI, and how does it differ from a general RFC-enabled function module?
+96. In which SAP transaction code do you typically search for existing BAPIs?
+97. If you want to create a new sales order from an external system, which standard BAPI might you consider?
+98. How do you test an RFC or BAPI quickly from within SAP (without writing a new ABAP program)?
+99. What role does the IDoc interface play if your external integration requires standard EDI-like data exchange?
+100. Compare the usage of IDoc-based integration vs. RFC-based integration in a typical SAP scenario.
+
+
 ---
 
 ### Happy Learning 🎉🎉🎉
