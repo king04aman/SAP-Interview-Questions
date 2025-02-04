@@ -117,6 +117,61 @@
 99. What role does the IDoc interface play if your external integration requires standard EDI-like data exchange?
 100. Compare the usage of IDoc-based integration vs. RFC-based integration in a typical SAP scenario.
 
+101. Define an IDoc in SAP. How is it structured in terms of segments?
+102. How do you configure partner profiles for IDoc inbound or outbound in WE20?
+103. Give an example of a standard IDoc message type (e.g., ORDERS) and its typical usage.
+104. Describe how you’d handle an inbound IDoc that fails with status 51. How do you reprocess or debug it?
+105. When extending a standard IDoc, how do you add a custom segment without breaking the standard?
+106. Why might you use the “ALE” concept with IDocs, and how do you set up distribution models (BD64)?
+107. In a real scenario, how do you ensure that IDoc data is posted to the correct application (e.g., creation of a sales order)?
+108. Compare basic IDoc type vs. extension IDoc type. When do you choose each approach?
+109. What is the purpose of segments like E1EDK01, E1EDP01, etc., in standard IDoc types for orders or deliveries?
+110. If you need a custom field in the order creation process, outline the steps to extend the IDoc and handle the additional data.
+
+111. What is SAP Business Workflow, and why is it used to automate business processes across modules?
+112. In a basic example, how do you define a workflow for approving a purchase requisition?
+113. What is a workflow container, and how do container elements pass data between tasks?
+114. How do you specify the “agent determination” to decide which user or role is responsible for a step?
+115. In transaction SWDD, what is the difference between a step of type “Activity” vs. type “User Decision”?
+116. Can you explain how events trigger a workflow? For instance, in a business object approach?
+117. Provide a simple scenario: a user triggers a workflow for leave approval. Where do you store or handle the status of that workflow?
+118. How do you handle escalations or reminders if a workflow task is not processed in a certain timeframe?
+119. Compare standard tasks and workflow templates. Which do you modify or reuse in an SAP-delivered workflow scenario?
+120. If you suspect a stuck workflow or missed event, which transactions or logs do you check to diagnose the issue?
+
+121. What is performance tuning in ABAP, and why does it matter for large enterprise systems?
+122. How do you use transaction ST05 (SQL Trace) to identify costly database statements in ABAP programs?
+123. Describe how to interpret runtime analysis in SAT or SE30 for a slow ABAP process.
+124. Give an example of a performance pitfall with internal tables (e.g., nested loops or repeated linear searches).
+125. Why is it often beneficial to push down calculations to the database level with SQL or CDS?
+126. How do table buffering settings affect performance and data freshness in ABAP applications?
+127. In a SELECT statement, how do you ensure you’re using the best possible index or key for filtering?
+128. What is the difference between “FOR ALL ENTRIES IN” vs. using a range table for SELECT filtering?
+129. Can you define a scenario where “OPEN CURSOR” or “FETCH NEXT CURSOR” might be used for large result sets?
+130. Which ABAP keywords or techniques would you watch out for if you suspect memory usage or performance issues?
+
+131. How has ABAP evolved to integrate with SAP HANA, especially in terms of code pushdown?
+132. What are AMDPs (ABAP-Managed Database Procedures)? Provide a simple scenario of how you’d use one.
+133. Compare an AMDP approach to just writing a standard SELECT with CDS. Where does each excel?
+134. If you define an AMDP method in a global class, how do you handle the SQLScript code within that method?
+135. What is the significance of the `BY DATABASE PROCEDURE` clause in an AMDP definition?
+136. Provide an example scenario: a complex calculation must run on HANA with minimal data transfer. How do you design that with AMDP?
+137. What is a table function in the context of AMDP, and how do you consume it in ABAP?
+138. Why might you combine AMDP with CDS for maximum synergy on SAP HANA?
+139. In debugging an AMDP, what special considerations or limitations exist compared to classical ABAP debugging?
+140. How do you handle exceptions or error messages in an AMDP procedure?
+
+141. Describe a simple ABAP CDS view definition with the `@AbapCatalog.sqlViewName` annotation.
+142. Why might you define associations in a CDS view, and how are they beneficial for data modeling?
+143. What is the difference between a “basic” CDS view and an “interface” or “consumption” CDS view?
+144. If you want to annotate a CDS for usage in Fiori Elements, which annotation families might you include (`@UI`, `@OData`)?
+145. Explain the concept of “code pushdown” with CDS. How does it reduce data transfer overhead?
+146. Provide an example scenario: you want to combine multiple tables with aggregations. Why is a CDS approach often more efficient than a classic ABAP SELECT loop?
+147. How do you create parameterized CDS views, and when might that be useful?
+148. Compare the use of `LEFT OUTER JOIN` vs. associations in a CDS. When do you prefer each?
+149. In a real scenario, how do you expose a CDS view as OData for an external UI5 application?
+150. Explain how you’d handle synonyms or cross-schema references in a CDS environment if your data resides in different DB schemas.
+
 
 ---
 
