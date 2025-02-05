@@ -172,6 +172,71 @@
 149. In a real scenario, how do you expose a CDS view as OData for an external UI5 application?
 150. Explain how you’d handle synonyms or cross-schema references in a CDS environment if your data resides in different DB schemas.
 
+151. What is OData, and why is SAP Gateway often the tool used to create OData services from ABAP?
+152. Describe the transaction SEGW. How do you create an OData service there?
+153. If you have a CDS view with `@OData.publish: true`, how does that auto-generate an OData service?
+154. Provide a scenario: a UI5 front-end needs CRUD operations on an SAP table. Summarize how you define the entity set and methods in OData.
+155. How do you handle deep insert operations for parent-child relationships in an OData service?
+156. Why might `$expand` queries be useful for retrieving associated data in a single OData call?
+157. Explain how you manage or test an OData service in Gateway Client (transaction /IWFND/GW_CLIENT).
+158. In a real production environment, how do you secure your OData services with authentication or roles?
+159. What is the difference between implementing OData through “code-based SEGW” vs. “annotation-based CDS exposure”?
+160. If a custom method is needed for special logic, how do you integrate a function import or action in OData?
+
+161. Provide a short definition of the SAP LUW (Logical Unit of Work) concept in ABAP.
+162. How do you handle database commits or rollbacks explicitly if needed in an ABAP program?
+163. What is `COMMIT WORK` vs. `ROLLBACK WORK`, and why might you only rarely call them directly in typical scenario?
+164. In a scenario: you must ensure either all data updates occur or none. Summarize how you might handle “transactional consistency” in ABAP code.
+165. If you are calling multiple BAPIs in a single program, how do you ensure they commit or roll back together?
+166. Why is it considered dangerous to commit in the middle of a user exit or BAdI in standard SAP processes?
+167. What are “update function modules” and how do they differ from normal function modules in terms of timing?
+168. In the context of updates, what is V1 vs. V2 vs. V3 update processing?
+169. If an update function module fails, how do you debug or reprocess that update from SM13?
+170. Summarize a scenario where you might chain multiple update tasks, and mention the potential pitfalls.
+
+171. Describe a scenario in which you might leverage events (`RAISE EVENT`, `CALLING the event handler`) in ABAP.
+172. How do you define or handle ABAP Classes that raise exceptions vs. legacy error handling with `SY-SUBRC`?
+173. Provide an example: you build a custom exception class. How do you throw and catch it?
+174. What are the differences between “checked” exceptions (CX_STATIC_CHECK) vs. “runtime” exceptions (CX_NO_CHECK) in ABAP OO?
+175. If you have a method that can fail, how do you define the `RAISING` clause, and how do you handle it in the caller?
+176. In a typical scenario: you want to produce a short dump for critical errors. Does ABAP OO encourage that approach, or a different approach?
+177. If you prefer structured exception handling over GOTO-based logic, how do you implement `TRY...CATCH...ENDTRY` in ABAP?
+178. How do you define multiple catch blocks for different exception classes in a single TRY block?
+179. Provide a scenario where you might re-throw an exception with additional context in ABAP OO.
+180. Why might exception-based error handling produce more maintainable code than older subrc checks?
+
+181. What is spool management in ABAP, and how do you create spool requests from a report?
+182. How do you view or reprint spool output in transaction SP01?
+183. If a user wants a scheduled job to produce a spool, which transaction do you use to define batch jobs?
+184. Why do we sometimes redirect spool requests to an output device configured for PDF or external printing?
+185. In your own words, how does spool retention time or reorganization affect old spool logs?
+186. If a spool is too large or the system is cluttered, how do you clean up spool requests systematically?
+187. Provide a scenario where you might embed specific spool parameters (like immediate printing or formatting) in an ABAP program.
+188. How do you interpret spool statuses or errors in the SAP spool system (SP01, SP02)?
+189. What is the significance of the parameter `SAP-SPOOL-XXX` in user or system profiles?
+190. If a spool is stuck or not printing, which check steps do you do first in a typical support scenario?
+
+191. In ALV grids, how do you integrate custom icons or pushbuttons within cells?
+192. Provide a scenario for generating multiple ALV lists in the same program with dynamic selection.
+193. Explain how the memory consumption of large internal tables can be managed or minimized.
+194. How might you store or retrieve persistent data in ABAP beyond normal tables, e.g., using Shared Objects or SQL-based logic?
+195. For advanced concurrency, what is an enqueue object, and how do you define it?
+196. Provide an example scenario: a user must lock a sales order for editing. Outline how you call `ENQUEUE_` or `DEQUEUE_` function modules.
+197. Why might you define a logical lock argument (like “order no.”) in the Enqueue object?
+198. If a user leaves the transaction abnormally, how does the system free or handle stale locks?
+199. In an SAP Script environment, how do you handle pages that overflow or continue into the next page automatically?
+200. Compare `MESSAGE` statement usage in a local program vs. messages stored in SE91 (message class).
+
+201. Provide a scenario in which you might use multi-lingual text elements or translations in an ABAP report.
+202. Why does ABAP often rely on logon language or system language for text retrieval?
+203. How do you define user-specific or system-wide text languages in an SAP system?
+204. In a real scenario, if you want to translate ABAP texts to multiple languages, how do you approach that?
+205. Describe the difference between text symbols, selection text, and message class texts regarding localization.
+206. Provide an example of a scenario where you might define synonyms for transaction codes or object references.
+207. In the context of spool output, how might you ensure that language-specific forms or labels are used?
+208. How do you handle special characters or Unicode in ABAP code or data elements?
+209. Why is it important to keep code pages or Unicode alignment correct, especially for extended ASCII or special language scripts?
+210. If you see “##NO_TEXT” warnings in ABAP checks, what does it imply regarding text elements?
 
 ---
 
