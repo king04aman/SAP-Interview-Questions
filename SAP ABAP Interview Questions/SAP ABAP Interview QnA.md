@@ -238,6 +238,51 @@
 209. Why is it important to keep code pages or Unicode alignment correct, especially for extended ASCII or special language scripts?
 210. If you see “##NO_TEXT” warnings in ABAP checks, what does it imply regarding text elements?
 
+211. What is the ABAP dictionary object “view,” and how does it differ from a physical table?
+212. Provide a scenario: you want to combine fields from multiple tables but only for read. Which view type might you choose?
+213. How do you define a maintenance view for certain tables so that users can update them via SM30?
+214. Explain the concept of help views for search help. Why might you define one?
+215. If you define a projection view, how does it differ from a database-level projection in HANA?
+216. How do you secure or restrict user access to certain fields or table data in a custom view scenario?
+217. Provide an example where you might define a join condition with multiple fields in a view.
+218. Why might you prefer to define a CDS view in code vs. a classical dictionary view in SE11?
+219. In a real scenario, how do you debug or trace a view that references multiple underlying tables?
+220. If you see a performance issue with a dictionary view, how do you approach analyzing or optimizing it?
+
+221. How do you handle background job scheduling in SM36, and why is that relevant for ABAP reports?
+222. Provide a scenario in which you’d define “variants” for your ABAP program to run automatically overnight.
+223. If a background job fails, how do you check logs or spool in SM37 to see the cause?
+224. What are job steps (ABAP program vs. external command vs. external program) in background job definitions?
+225. Why might you define “event-based” scheduling for a job instead of a time-based schedule?
+226. Provide a scenario where you’d define multiple steps in one job—for instance, first extracting data, then emailing results.
+227. How do you handle parallel processing in background jobs, e.g., using multiple job servers or multiple tasks?
+228. In performance terms, how do you ensure a large job doesn’t saturate the system? Which precautions or configuration might you check?
+229. Why is spool output important for background jobs, and how do you automatically email spool contents to end users?
+230. If you need to trigger a job from an external system, how do you handle that integration with the SAP scheduler?
+
+231. Summarize how SAP memory (import/export to memory) differs from ABAP memory usage within a single session.
+232. Provide an example: you want to pass data from one program to another. How do you use `EXPORT TO MEMORY` and `IMPORT FROM MEMORY`?
+233. In a scenario with multiple sessions open, can you share memory data across them? If not, why?
+234. Explain why the statement `SET PARAMETER ID` and `GET PARAMETER ID` might be used for user parameter memory.
+235. If you suspect memory constraints, which system parameters or transactions do you check (e.g., in RZ11)?
+236. Provide an example where you’d store a complex internal table in shared memory objects. How do you define that class-based approach?
+237. Why do we prefer ephemeral usage of memory for short tasks vs. storing large volumes for a long time?
+238. In older systems, how do you handle cross-transaction data passing if you can’t rely on well-structured code patterns?
+239. How do you debug or inspect the content of SAP memory or ABAP memory to see if data is stored correctly?
+240. Provide an advanced scenario: a global caching approach for reference data using shared objects. Outline the main steps.
+
+241. What is the “package concept” in ABAP? How do you group your development objects under packages?
+242. Provide an example of naming conventions or best practices for ABAP packages in large organizations.
+243. How do “package interfaces” define restricted usage of certain objects from outside?
+244. Why might you define different layers or package hierarchies (e.g., ZCL_ for classes, ZIF_ for interfaces, etc.)?
+245. If you want to enforce architecture rules (like no circular dependencies between packages), how do you do that?
+246. Summarize the difference between local packages ($TMP) vs. custom packages (Zxxx).
+247. If you see a warning about a cross-package check, how do you correct it?
+248. Provide a scenario: you move an object from $TMP to a real package for transport. Outline the steps.
+249. Why might you define a separate package for “test classes” or “utility classes”?
+250. In an advanced sense, how do you tie package checks with ATC or Code Inspector for code quality enforcement?
+
+
 ---
 
 ### Happy Learning 🎉🎉🎉
