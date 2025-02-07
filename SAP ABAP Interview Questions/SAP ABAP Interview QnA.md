@@ -282,6 +282,52 @@
 249. Why might you define a separate package for “test classes” or “utility classes”?
 250. In an advanced sense, how do you tie package checks with ATC or Code Inspector for code quality enforcement?
 
+251. How do you run automated code checks with the ABAP Test Cockpit (ATC) or Code Inspector (SCI)?
+252. Provide an example of a common code issue (like “SELECT * with no WHERE clause”) flagged by code check tools.
+253. Why is it beneficial to fix syntax warnings or performance warnings before moving code to QA or production?
+254. Summarize how you can define your own check variant in Code Inspector for organizational standards.
+255. If a developer is ignoring certain warnings, how can you enforce stricter checks or guidelines?
+256. Provide a scenario in which you incorporate ATC checks into a continuous integration pipeline for ABAP.
+257. How do quick fixes in ABAP Development Tools (Eclipse) help address common coding anti-patterns?
+258. If you see a security-related warning (e.g., direct dynamic SQL usage), how do you handle or correct it?
+259. Compare advanced custom checks vs. standard checks in Code Inspector or ATC. When do you need custom ones?
+260. Why might you run global code checks across the entire system periodically?
+
+261. Define the concept of “SAP-based interfaces” vs. “external interfaces.” Which ABAP integration methods exist for each?
+262. Provide a scenario for EDI-based integration with IDocs vs. direct RFC calls. Why pick one approach over the other?
+263. How do you handle file-based input or output in ABAP (OPEN DATASET, READ DATASET, etc.) for legacy integrations?
+264. Summarize how SOAP or REST web services might be generated from ABAP (older SOAP approach vs. new OData).
+265. If you have to parse XML data in ABAP, which classes or transformation approaches might you use (e.g., `CALL TRANSFORMATION`)?
+266. Provide an example of JSON handling in newer ABAP releases, where you parse or generate JSON content.
+267. Why might you define an ABAP proxy in an SAP PI/PO scenario, and how does that differ from direct RFC/IDoc calls?
+268. In a real scenario, how do you handle error logging or reprocessing for asynchronous interfaces?
+269. If performance is critical in a data-intensive interface, what ABAP or database-level optimization might you do?
+270. Provide an example of function modules or classes that help handle CSV or text file uploading in ABAP screens.
+
+271. In the context of S/4HANA, what is the recommended approach to custom code—Greenfield vs. Brownfield? 
+272. Summarize how the “Simplification List” affects certain ABAP constructs when moving from ECC to S/4HANA.
+273. Why do many older tRFC-based or batch-input solutions become obsolete or replaced with more modern APIs in S/4HANA?
+274. In S/4HANA, how does the Universal Journal (ACDOCA) concept affect custom ABAP reports on finance data?
+275. Provide an example of how “code pushdown” to HANA with CDS and AMDP is more critical in S/4HANA than older ERP systems.
+276. If a custom ABAP program references tables that are changed or removed in S/4HANA (like some MARC fields), how do you adapt it?
+277. Summarize how “Extension Mechanisms” (In-App vs. Side-by-Side) apply to ABAP custom logic in an S/4HANA Cloud environment.
+278. In a scenario: your classic ABAP workflow references finance transactions that are reworked in S/4HANA. How do you handle that migration?
+279. Why might you check for usage of certain SD or MM transactions that are replaced by Fiori apps in S/4, and how does that affect custom ABAP code?
+280. If you are using older ABAP dictionary objects that are no longer relevant in S/4HANA (like some LIS tables), how do you proceed with clean-up?
+
+281. Provide a scenario: you must handle multi-currency conversions in ABAP. Which function modules or classes do you rely on?
+282. In financial postings, how do you ensure decimal precision or handle large amounts in ABAP data types?
+283. Summarize how you might store an exchange rate table in ABAP memory or shared objects for quick lookups.
+284. Why is it important to consider user locale or date/time formats in ABAP for global rollouts?
+285. Provide an example of advanced date arithmetic in ABAP, e.g., calculating days between two timestamps.
+286. In a real scenario, how do you handle time zone conversions (like converting server time to user’s local time)?
+287. If your program deals with fiscal years that differ from calendar years, how do you integrate organizational or customizing data?
+288. Which standard tables or function modules might you reference to handle text conversions for units of measure or currency codes?
+289. Provide a scenario in which your ABAP code must read user-specific decimal notation or sign settings from user parameters.
+290. Why is it essential to handle all these minor data conversions carefully in large enterprise ABAP solutions?
+
+291. Describe a scenario for sending emails directly from an ABAP program using function modules like `SO_NEW_DOCUMENT_SEND_API1`.
+292. How do you embed attachments in an outbound email from ABAP (e.g., PDF from spool or custom binary data)?
 
 ---
 
