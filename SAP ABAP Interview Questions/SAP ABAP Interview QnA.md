@@ -328,6 +328,37 @@
 
 291. Describe a scenario for sending emails directly from an ABAP program using function modules like `SO_NEW_DOCUMENT_SEND_API1`.
 292. How do you embed attachments in an outbound email from ABAP (e.g., PDF from spool or custom binary data)?
+293. If you want to handle inbound emails into SAP, what configuration or function modules might be relevant?
+294. Summarize how you can retrieve email addresses from user master data or organizational data in ABAP.
+295. Why is it crucial to consider plain text vs. HTML formatting in ABAP-based emails?
+296. Provide an example of merging spool output into an email as an attachment automatically after a report finishes.
+297. In a scenario, you want to schedule a daily job that sends status updates to managers by email. Which ABAP approach do you take?
+298. If an email bounces or fails, how do you check or log that in the SAP system or user’s inbox?
+299. How do you define distribution lists or shared mailboxes that ABAP might use?
+300. Compare using SAPconnect transaction SCOT vs. direct function modules for controlling email sending.
+
+301. In an ABAP dictionary structure, how do you define an include structure, and why is it sometimes used for reusability?
+302. Provide a scenario: you want multiple tables or data structures to share the same “address fields.” Outline how you do that with includes.
+303. How do you differentiate an include structure from an append structure for standard tables?
+304. If you create nested includes (includes within includes), what potential confusion or naming collisions might occur?
+305. Summarize how using includes might complicate the transport or version management of dictionary objects.
+306. Provide a scenario in which you might define a global type (in transaction SE11) vs. a local type inside an ABAP program.
+307. Why might you define line types or structures in the dictionary rather than code them inline in the program?
+308. If you rename a field in a dictionary structure that is widely used, how do you handle the impact analysis?
+309. Provide an example of controlling “occurs” or dynamic arrays with older ABAP constructs (though replaced by internal tables).
+310. In your view, how does the “Clean Code” principle encourage or discourage the overuse of includes?
+
+311. Outline how you do a background RFC (bgRFC) vs. synchronous RFC in an advanced integration scenario.
+312. Provide a scenario in which you chain multiple BAPIs in a single LUW to ensure data consistency.
+313. If you have to do an asynchronous call from ABAP to an external system, how do you handle callbacks or confirmations?
+314. Summarize the concept of the “SAP Java Connector” for calling ABAP RFC from Java. Is that still relevant with OData around?
+315. Provide an example: a standard SAP BAPI might have table parameters for items. How do you fill them in your ABAP code before calling the BAPI?
+316. If a BAPI returns an error in the RETURN parameter table, how do you parse and handle that in your ABAP logic?
+317. Differentiate between “BAPI_TRANSACTION_COMMIT” vs. explicit COMMIT WORK calls in a custom scenario.
+318. Why are BAPIs often recommended over direct table updates in a business object scenario?
+319. If you can’t find a standard BAPI for your needs, how do you build a custom BAPI that aligns with SAP’s guidelines?
+320. Provide a scenario in which BAPI wrappers or advanced custom RFC interfaces might be necessary for specialized logic.
+
 
 ---
 
