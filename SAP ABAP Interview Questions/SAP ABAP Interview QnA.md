@@ -359,7 +359,54 @@
 319. If you can’t find a standard BAPI for your needs, how do you build a custom BAPI that aligns with SAP’s guidelines?
 320. Provide a scenario in which BAPI wrappers or advanced custom RFC interfaces might be necessary for specialized logic.
 
+321. What is the ABAP Unit framework for unit testing, and how do you define a local test class?
+322. Provide an example: you have a small method that calculates discounts. How do you write a test method to verify it?
+323. Summarize how you run ABAP Unit tests from SE80 or Eclipse-based ABAP tools.
+324. If a test fails, how do you see the message or debug the specific assertion that triggered the failure?
+325. Why is it beneficial to have ABAP unit tests for critical custom code, especially in agile development?
+326. Provide a scenario: you want to mock a function module call inside your method for testing. How do you approach that in ABAP Unit?
+327. Can you define test fixtures or setup/teardown methods for ABAP Unit classes? Why are they useful?
+328. If you have multiple test classes, how do you group them for a single run, e.g., a test suite approach?
+329. In advanced usage, how do you incorporate ABAP Unit tests into a continuous integration pipeline in large SAP landscapes?
+330. Why do some older ABAP developers skip unit testing, and how do you encourage a test-driven approach?
 
+331. Summarize how you might do advanced “string manipulation” with `REGEX` in ABAP, providing a short code snippet.
+332. In ABAP, how do you parse a CSV line into fields using SPLIT or a more advanced approach?
+333. Provide a scenario in which you must remove all non-alphanumeric characters from a user input string. Outline your approach.
+334. If performance is critical in repeated string concatenations, how do you optimize that in ABAP 7.4+ syntax (e.g., `|...|` string templates)?
+335. Summarize how SHIFT or TRANSLATE statements help in certain transformations.
+336. Give an example of searching a substring in a large text using `FIND` vs. `FIND REGEX`.
+337. In advanced usage, how do you create or use an ABAP-based XML transformation for converting data to XML?
+338. Provide a scenario where you might define a transformation in transaction XSLT_TOOL for a custom mapping.
+339. Why might you define a custom simple transformation (ST) for JSON or XML in ABAP?
+340. If a user complains about messed up text encoding, which checks do you do regarding code page or Unicode?
+
+341. In the context of older SAP modules (like SD, MM, FI), how does an ABAP developer typically find relevant tables or function modules?
+342. Provide a scenario for analyzing a transaction’s underlying code flow by hooking into debugging or calling relationships (SE80, SE93, etc.).
+343. Summarize how you track a standard field on a screen to see which data element or table it references.
+344. If you need to adjust a standard layout or add a new tab in VA01 or ME21N, which enhancement concepts might apply?
+345. Provide an example of using the “where-used list” in ABAP to see all programs referencing a table or data element.
+346. In your own words, how do you approach reverse engineering a standard SAP process to see if custom code is feasible?
+347. If a user demands a new custom field in a standard transaction, how do you approach the “appending structure” vs. screen exit?
+348. Summarize how you might handle a scenario where standard code is insufficient, so you resort to a custom transaction that calls BAPIs.
+349. Provide an example of function modules that retrieve organizational data or user roles, relevant for building logic around them.
+350. Why is it generally recommended to reuse SAP standard logic rather than rewriting from scratch in custom code?
+
+351. Describe a scenario where you debug a background update job that uses V1 and V2 updates.
+352. How do you interpret “Update debugging” in transaction SM13 or debug an update function module that runs asynchronously?
+353. Provide an example of a cryptic error in a background update that might require analyzing the “Update function module” call stack.
+354. Summarize how advanced developers handle “retrying” an update record that previously failed in the queue.
+355. If you see repeated short dumps from an update process, how do you systematically isolate the root cause?
+356. Compare the performance or reliability of synchronous commits vs. queued updates in a heavily used scenario.
+357. Provide an example: a user tries to post goods movement but the update fails due to a data lock conflict. How do you handle that gracefully?
+358. Why do some standard SAP objects have updates scheduled in the background (like LIS or S032 structures) rather than immediate commits?
+359. If you want to ensure multiple changes are posted in a single update step, how do you group them in the same LUW?
+360. In an advanced scenario, how might you use own update key or update function group for special business logic?
+
+361. Provide a scenario in which advanced date/time calculations are crucial, e.g., a service-level agreement that must exclude weekends.
+362. How do you handle crossing year boundaries or leap years in ABAP date arithmetic?
+363. Summarize how you might store a timestamp in a single field vs. separate date/time fields, and the pros/cons.
+364. If you have a user in PST time zone but the server is in UTC, how do you ensure correctness in your ABAP logic?
 ---
 
 ### Happy Learning 🎉🎉🎉
