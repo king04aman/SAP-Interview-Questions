@@ -407,6 +407,46 @@
 362. How do you handle crossing year boundaries or leap years in ABAP date arithmetic?
 363. Summarize how you might store a timestamp in a single field vs. separate date/time fields, and the pros/cons.
 364. If you have a user in PST time zone but the server is in UTC, how do you ensure correctness in your ABAP logic?
+365. Provide an example of using function modules like `HR_99S_INTERVAL_BETWEEN_DATES` or similar for date differences.
+366. If your scenario needs to schedule a background job every last day of the month, how do you programmatically find that day?
+367. How do you parse a user input “YYYYMMDD” string into a valid ABAP date, checking for validity?
+368. Why might time zones in ABAP be stored in table TTZZ, and how do you query or use that for conversions?
+369. Provide an example: calculating the next available business day after a holiday. Which customizing or calendars might you reference in ABAP?
+370. If a user complains the system shows the wrong local time, which user parameter or system setting do you check?
+
+371. In ALV, how do you handle summation or subtotals by certain fields (like region, material group)?
+372. Provide a scenario in which an ALV user wants to drag columns to reorder them, or define custom sorts at runtime.
+373. Summarize how the event `DATA_CHANGED` can be used in an editable ALV grid to validate input on the fly.
+374. If you want to embed ALV in a custom container on a screen, how do you define that in a module pool?
+375. Provide an example of using a “hotspot” field in ALV that triggers a specialized action on click.
+376. If a user wants to export ALV data to Excel, which standard functionalities or custom approach do you use?
+377. Summarize how to define a field catalog programmatically if you don’t rely on DDIC references.
+378. In the older REUSE_ALV function modules, how do you define sorting or filtering options for the user?
+379. Provide a scenario: after generating ALV, you want to immediately email the output as PDF. Outline how you do that.
+380. If you suspect performance issues in building the ALV, do you optimize the data retrieval first or the ALV rendering?
+
+381. Provide a scenario in which you’d store and read XML data using iXML library in ABAP.
+382. How do you create an iXML document object, parse it, and navigate DOM nodes in ABAP?
+383. Summarize the difference between a DOM parser vs. a SAX parser approach in ABAP iXML.
+384. If you have a large XML file, how do you handle streaming or incremental reading to avoid memory overload?
+385. Provide an example: you want to generate an XML from an internal table. Which transformation or library helps?
+386. Why might you define a special XSLT or ST transformation in the ABAP system for advanced mapping?
+387. If a user demands schema validation of incoming XML, do you have standard classes or do you implement custom checks?
+388. Summarize how error handling or exceptions might occur in iXML if the structure is malformed.
+389. Provide a scenario: you must combine multiple XML documents into one for a certain interface. Outline how you approach that in ABAP.
+390. In performance terms, how do you measure or tune large XML processing in ABAP to avoid timeouts?
+
+391. In an ABAP program, how do you measure runtime using `GET RUN TIME FIELD` or `cl_abap_runtime` classes?
+392. Provide an example: you suspect a nested loop is the bottleneck. How do you gather exact timing metrics?
+393. Summarize how you might use transaction SAT or SE30 for a detailed runtime analysis of your code sections.
+394. If your code calls many function modules, do you see them aggregated or broken down in the runtime analysis?
+395. Provide a scenario in which you must handle memory usage analysis in combination with performance analysis.
+396. Why might you choose SQL trace (ST05) plus runtime analysis together for a comprehensive performance view?
+397. In your own words, how does the ABAP trace differ from the NWBC or front-end performance traces?
+398. Provide an example of a suspicious call in the trace output that indicates an unnecessary repeated SELECT in a loop.
+399. Summarize how you might tune or reduce the complexity of logic once you identify a hotspot in the runtime analysis.
+400. If you find that a standard SAP function is slow, how do you proceed—can you optimize it or must you handle it differently?
+
 ---
 
 ### Happy Learning 🎉🎉🎉
