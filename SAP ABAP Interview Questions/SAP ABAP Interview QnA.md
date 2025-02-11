@@ -447,6 +447,66 @@
 399. Summarize how you might tune or reduce the complexity of logic once you identify a hotspot in the runtime analysis.
 400. If you find that a standard SAP function is slow, how do you proceed—can you optimize it or must you handle it differently?
 
+401. In a scenario: you have to build a module pool (dialog programming) for a custom transaction. Outline the main steps (screens, flow logic).
+402. Provide an example of defining screen elements in the Screen Painter (SE51), such as input fields and pushbuttons.
+403. How do you pass data between screens or handle user commands in PAI (Process After Input)?
+404. Summarize the difference between PBO (Process Before Output) and PAI in dialog modules.
+405. Provide a scenario where you define a custom sub-screen to embed in a main screen for certain conditions.
+406. If you suspect a loop at screen or chain-endchain usage, how do you handle that for input validations?
+407. Why might you define a tabstrip control or a custom control (like an ALV grid) on a dialog screen?
+408. Provide an example of dynamic screen modifications, e.g., hiding or showing fields based on user input.
+409. In performance or user experience terms, how do you keep a module pool from becoming too large or unwieldy?
+410. Summarize how you typically transport or test a module pool transaction from dev to QA.
+
+411. Provide a scenario for building a queue with qRFC if you need guaranteed sequence of remote calls.
+412. How do you define your own queue names or manage queue blocks in an ABAP integration scenario?
+413. Summarize how inbound/outbound queues are monitored in transactions like SMQ1/SMQ2.
+414. Provide a scenario: if a queue is stuck or locked, how do you troubleshoot that in SMQ2?
+415. Why might you prefer qRFC over tRFC for certain business processes that rely on sequential updates?
+416. If a queue fails mid-process, how do you reprocess only the failed item or the entire queue?
+417. Provide an example of using queue watchers or events that trigger additional logic once the queue is free again.
+418. Summarize how you avoid queue deadlocks if multiple processes push to or read from the same queue.
+419. In advanced usage, how do you handle cluster or multi-application server scenarios with qRFC to ensure no duplication?
+420. Provide an example of combining qRFC with IDoc or BAPI calls for complex interface orchestration.
+
+421. In an ABAP environment, how do you build a test double framework or mocking approach for classes that call external services?
+422. Provide a scenario in which you might define an interface vs. a direct class for better testability.
+423. Summarize how “dependency injection” can apply in ABAP, even if not as widely used as in other languages.
+424. If you have code that does direct SELECT from the database, how do you isolate that for unit testing?
+425. Provide an example: a method that references a global function module. How might you mock it in your test environment?
+426. Why is rewriting legacy ABAP to be “test-friendly” beneficial for ongoing maintenance?
+427. Summarize the concept of “Clean ABAP” guidelines and how they encourage more modular, readable code.
+428. Provide a scenario in which you define a local test environment that simulates DB tables with dummy data.
+429. If your method triggers a COMMIT WORK, how do you test that effect in ABAP Unit? Or do you factor it out?
+430. How do you incorporate test layers (unit test, integration test, acceptance test) in an ABAP-based dev cycle?
+
+431. In a scenario: a user demands to shift from spool-based printing to direct PDF download. How do you implement that in an ALV or custom logic?
+432. Provide a short code snippet for generating a PDF from spool using function modules like CONVERT_OTF or CONVERT_ABAPSPOOLJOB_2_PDF.
+433. Summarize how you might bypass spool altogether by directly calling PDF rendering from a Smart Form or Adobe Form.
+434. If the user wants to prompt “Save as PDF” on the front-end, how do you handle that from an ABAP perspective?
+435. Provide an example: you embed an Adobe Interactive Form in a Web Dynpro or SAPUI5 application for data entry.
+436. Why might Adobe Forms require an ADS (Adobe Document Services) configuration in NetWeaver Java stack?
+437. Summarize the difference between a stand-alone PDF generation vs. an interactive scenario with fillable fields.
+438. If a user complains about font issues in the PDF, which style or device type settings might you check?
+439. Provide a scenario in which you spool a Smart Form but also need to capture it as a PDF for archiving in the content repository.
+440. In advanced usage, how might you combine PDF forms with e-signatures or secure fields in ABAP?
+
+441. What are code pages or Unicode in SAP ABAP, and how do they affect data handling?
+442. Provide a scenario: you read a text file in SHIFT-JIS encoding from a Japanese partner. How do you handle that in ABAP?
+443. Summarize how the system code page or user code page influences special character display.
+444. If your system is fully Unicode, how do you manage older “non-Unicode” ABAP programs or dictionaries?
+445. Provide an example: you attempt to store an emoji or complex character in an ABAP string. Does it succeed or cause issues?
+446. Why might you define the `UNICODE` directive in your ABAP program’s attributes?
+447. Summarize how you detect or convert to uppercase in different locales (like Turkish I vs. i).
+448. Provide a scenario in which a mismatch of code pages caused truncated or garbled text in a legacy interface.
+449. How do you handle conversion exit routines for fields that require specialized display or input formatting?
+450. In performance or memory terms, how does a Unicode system differ from older non-Unicode ABAP stacks?
+
+451. Provide an example of how a developer might do direct OS-level or file system calls from ABAP (external commands, etc.).
+452. Summarize how external commands are configured in SM69 and called from ABAP (SXPG_COMMAND_EXECUTE).
+453. If you want to rename or move files on the application server, which statements do you use (OPEN DATASET, etc.)?
+454. Provide a scenario in which you might define your own external program to parse data, then ABAP calls it for integration.
+
 ---
 
 ### Happy Learning 🎉🎉🎉
