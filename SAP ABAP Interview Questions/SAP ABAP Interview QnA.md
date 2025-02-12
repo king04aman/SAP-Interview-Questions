@@ -506,7 +506,56 @@
 452. Summarize how external commands are configured in SM69 and called from ABAP (SXPG_COMMAND_EXECUTE).
 453. If you want to rename or move files on the application server, which statements do you use (OPEN DATASET, etc.)?
 454. Provide a scenario in which you might define your own external program to parse data, then ABAP calls it for integration.
+455. How do you ensure security so that only authorized commands can be executed from ABAP?
+456. Why might you prefer a standard integration approach vs. direct OS calls for portability reasons?
+457. Summarize how you handle error logs or return codes from an external command call in ABAP.
+458. Provide an example of reading a directory listing from AL11 or using `EPS_GET_DIRECTORY_LISTING`.
+459. If the user wants to trigger a shell script on Unix from ABAP, how do you define or manage that approach carefully?
+460. In advanced usage, how might you push data to an external ftp server or sftp from ABAP?
 
+461. Provide a scenario in which you measure database block lock or table lock conflicts in ABAP.
+462. How do you interpret transaction DB01 or lock conflict logs to see if your custom code causes deadlocks?
+463. Summarize how you might mitigate concurrency issues with short-lived transactions or refined locking approach.
+464. If you discover that a wide table lock is created by a certain SELECT FOR UPDATE, how do you refine it?
+465. Provide an example: you use smaller, row-level locks with “UPDATE ... WHERE ...” to reduce conflicts.
+466. In advanced usage, how do you combine HANA concurrency features with ABAP locks to avoid collisions?
+467. Summarize how you handle large batch updates in a time window to avoid interfering with online transactions.
+468. Provide a scenario: a custom update program locks entire MARA table. Outline how you fix that to only lock relevant materials.
+469. Why is it critical to release locks (DEQUEUE) after updates, especially if the user might remain idle?
+470. In performance terms, how do you ensure minimal lock duration for high-volume transactions?
+
+471. How do you incorporate Git-based versioning or DevOps in an ABAP environment, e.g., via abapGit or CI tools?
+472. Provide a scenario: you want local ABAP code in a Git repository for collaborative development. Summarize the steps.
+473. Summarize how abapGit supports a file-based transport of ABAP objects to remote repositories.
+474. If your organization uses SAP Cloud Platform ABAP Environment, how does the Git-based approach differ from on-prem?
+475. Provide an example of how you might handle merges or branching for ABAP code in a DevOps pipeline.
+476. Why might you face challenges using Git for certain SAP objects not purely code-based (like screens or forms)?
+477. Summarize how continuous integration test runs (ATC checks) might be triggered after each Git push for ABAP code.
+478. Provide a scenario where you revert a commit in abapGit that introduced a bug, reconciling with the SAP transport system.
+479. In advanced usage, how do you handle object name conflicts or package structures in abapGit?
+480. If you have an established solution manager / transport management approach, how do you integrate that with abapGit?
+
+481. Provide a scenario in which you might do cluster or pool table reads in older SAP modules, like BSEG or KONV.  
+482. Summarize how the S/4HANA approach disallows certain cluster-based structures or merges them for performance.
+483. If you see that an older standard table is cluster-based, how do you adapt your custom code in S/4 transition?
+484. Provide an example of a read on a cluster table (like PCLn for HR) and the function modules you might call for HR data.
+485. Why is it often recommended not to do direct cluster reads but rely on higher-level HR or payroll function modules?
+486. Summarize how you handle performance or debugging of cluster reads if you suspect a data corruption in cluster.
+487. Provide a scenario in which you might systematically convert cluster/pool tables to transparent in a custom or upgrade context.
+488. Why do certain older HR infotypes rely heavily on cluster logic, and how does that affect expansions or enhancements?
+489. In advanced usage, how might you track changes or logs in cluster-based data if it’s not open like transparent tables?
+490. If you suspect a mismatch in cluster structure definitions, how do you rectify or regenerate them?
+
+491. Give an example of using “parallel processing” in ABAP (CALL FUNCTION ... STARTING NEW TASK) for large data processing.
+492. Summarize how you coordinate returning results from asynchronous tasks in ABAP.
+493. Provide a scenario in which you might spawn multiple tasks to fetch data from multiple large tables simultaneously.
+494. If a user wants to see progress or partial results while parallel tasks run, how do you handle that in the main session?
+495. Why do you consider lock collisions or concurrency issues more carefully with parallel tasks?
+496. Provide an example: after each parallel task finishes, you handle the results in a callback form routine or method.  
+497. Summarize how to debug or trace parallel tasks that might generate short dumps in separate sessions.
+498. If you exceed the maximum number of allowed tasks or RFC connections, how do you handle fallback or a queue approach?
+499. Why is it crucial to do performance tests with realistic data volumes when employing parallel processing?
+500. In advanced usage, how might you combine parallel tasks with a background job chain for extremely large data processing?
 ---
 
 ### Happy Learning 🎉🎉🎉
