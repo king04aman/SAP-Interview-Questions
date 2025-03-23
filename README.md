@@ -3,6 +3,12 @@
 
 ![SAP-Interview-Questions](https://socialify.git.ci/king04aman/automation-workflows/image?description=1&font=Jost&language=1&logo=https%3A%2F%2Fimages.weserv.nl%2F%3Furl%3Dhttps%3A%2F%2Favatars.githubusercontent.com%2Fu%2F62813940%3Fv%3D4%26h%3D250%26w%3D250%26fit%3Dcover%26mask%3Dcircle%26maxage%3D7d&name=1&owner=1&pattern=Floating%20Cogs&theme=Dark)
 
+![Stars](https://img.shields.io/github/stars/king04aman/sap-interview-questions?style=social)
+![Forks](https://img.shields.io/github/forks/king04aman/sap-interview-questions?style=social)
+![Issues](https://img.shields.io/github/issues/king04aman/sap-interview-questions)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+![License](https://img.shields.io/github/license/king04aman/sap-interview-questions)
+
 
 *A comprehensive, open-source collection of SAP-related interview questions, curated by **[king04aman](https://github.com/king04aman)**. These questions span multiple SAP domains, aimed at helping learners, job seekers, and seasoned professionals deepen their knowledge of SAP technologies.*
 
